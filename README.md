@@ -33,3 +33,7 @@ In `config.js`, set `visibleCategories` entries to `false` to hide individual ca
 - Removed Soap; replaced Jacket with Pants; changed Help and Please visuals.
 - `words.js` contains the vocabulary and default symbols. To replace a symbol, edit the entry or add an image mapping to `pictureOverrides`; upload the corresponding image to `images/`.
 - Browser/device emoji designs vary; review the published page on the child's actual device.
+
+
+## V4: Hide Bible Stories and Spiritual Learning
+The included config.js already sets `stories: false` and `'Spiritual Learning': false`. Upload ALL files at the repository root (replace existing files), then commit. The included `sw.js` replaces an older offline service worker and clears its caches. The website also unregisters older workers. If the old site remains visible, open Chrome DevTools > Application > Service Workers > Unregister, then reload (do not clear site data if you have locally saved family photos).
