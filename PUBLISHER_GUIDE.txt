@@ -1,0 +1,12 @@
+LITTLE WORDS — PUBLISHER GUIDE
+
+Open index.html in a text editor. Find const PUBLISHER near the start of the script.
+visibleTabs: set each tab to true/false to control public tabs.
+allowVisitorEditing: false hides the Grown-ups editor and family-person editor from visitors.
+allowVisitorTabChanges: false makes tab choices publisher-controlled.
+
+To prepare your own family names and photos before publishing, temporarily set allowVisitorEditing true in a local copy, but browser edits do NOT publish automatically. For shared defaults you must place the data/images in the deployed website files or use a backend. Do not put private photos or names in a public GitHub repository without consent.
+
+LocalStorage preserves per-device lesson edits and photos subject to browser storage limits and clearing site data. It does not sync across devices. Back up important changes with Export.
+
+IMPORTANT: These are presentation settings, NOT security. Anyone can inspect or modify public website code. A true admin account, centrally controlled content and private photos require a backend with authentication.
