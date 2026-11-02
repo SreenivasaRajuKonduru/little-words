@@ -1,16 +1,27 @@
+
 /* PUBLISHER CONTROL — change true/false, then commit on GitHub. */
-// PUBLISHER SETTINGS: edit these values in GitHub before publishing.
-// This is UI control, NOT authentication or secure access control.
+
 const PUBLISHER = {
   allowVisitorEditing: false,
-  visibleTabs: {learn:true,names:true,stories:true,practice:true,meaning:true},
+
+  // Main tabs
+  visibleTabs: {
+    learn: true,
+    names: true,
+    stories: false,   // Bible Stories hidden
+    practice: true,
+    meaning: true
+  },
+
   allowVisitorTabChanges: false,
-  // Number lessons 1–5 only; raise this limit later as the child learns.
+
+  // Show numbers 1–5 only
   maxNumber: 5,
-  // Sub-tabs (learning categories): true = show, false = hide.
+
+  // Learning categories
   visibleCategories: {
     'My Family': true,
-    'Spiritual Learning': false,
+    'Spiritual Learning': false, // Hidden
     'Food & Drinks': true,
     'Body Parts': true,
     'ABCs': true,
@@ -22,6 +33,6 @@ const PUBLISHER = {
     'Clothes': true,
     'Toys': true,
     'Outside & Places': true,
-    'Everyday Words': true,
+    'Everyday Words': true
   }
 };
