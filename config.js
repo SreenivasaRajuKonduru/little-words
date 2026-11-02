@@ -1,4 +1,3 @@
-
 /* PUBLISHER CONTROL — change true/false, then commit on GitHub. */
 
 const PUBLISHER = {
