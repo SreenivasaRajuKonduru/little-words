@@ -10,7 +10,7 @@ const PUBLISHER = {
   // Sub-tabs (learning categories): true = show, false = hide.
   visibleCategories: {
     'My Family': true,
-    'Spiritual Learning': true,
+    'Spiritual Learning': false,
     'Food & Drinks': true,
     'Body Parts': true,
     'ABCs': true,
