@@ -1,0 +1,19 @@
+/* Vocabulary categories and words. Each item: category, word, symbol, spoken meaning. */
+const groups=['My Family','Spiritual Learning','Food & Drinks','Body Parts','ABCs','Numbers','Colors','Animals','Vehicles','At Home','Clothes','Toys','Outside & Places','Everyday Words'];
+const raw=[
+['My Family','Mommy','👩','Mother or mommy'],['My Family','Daddy','👨','Father or daddy'],['My Family','Grandma','👵','Grandmother'],['My Family','Grandpa','👴','Grandfather'],['My Family','Baby','👶','A little baby'],['My Family','Brother','👦','A boy who has the same parent as me'],['My Family','Sister','👧','A girl who has the same parent as me'],['My Family','Uncle','👨‍🦱','My parent’s brother or an uncle in our family'],['My Family','Auntie','👩‍🦱','My parent’s sister or an aunt in our family'],['My Family','Cousin','🧒','My aunt or uncle’s child'],['My Family','Brother-in-law','👨‍💼','My sibling’s husband or my spouse’s brother'],['My Family','Sister-in-law','👩‍💼','My sibling’s wife or my spouse’s sister'],['My Family','Niece','👧🏽','My brother’s or sister’s daughter'],['My Family','Nephew','👦🏽','My brother’s or sister’s son'],['My Family','Great-grandma','👵🏽','My grandparent’s mother'],['My Family','Great-grandpa','👴🏽','My grandparent’s father'],['My Family','Husband','🤵','A married man'],['My Family','Wife','👰','A married woman'],['My Family','Son','👦🏻','A parent’s boy'],['My Family','Daughter','👧🏻','A parent’s girl'],
+...Array.from('ABCDEFGHIJKLMNOPQRSTUVWXYZ',x=>['ABCs',x,x,'The letter '+x]),...Array.from({length:20},(_,i)=>['Numbers',String(i+1),['1️⃣','2️⃣','3️⃣','4️⃣','5️⃣','6️⃣','7️⃣','8️⃣','9️⃣','🔟'][i]||String(i+1)+'️⃣','The number '+(i+1)]),
+...['Red|🔴','Blue|🔵','Yellow|🌞','Green|🟢','Orange|🟠','Purple|🟣','Pink|🩷','Black|⚫','White|⚪','Brown|🟤'].map(x=>['Colors',...x.split('|'),'A color']),
+...['Apple|🍎','Banana|🍌','Milk|🥛','Water|💧','Bread|🍞','Egg|🥚','Rice|🍚','Cheese|🧀','Pizza|🍕','Strawberry|🍓','Carrot|🥕','Juice|🧃','Cookie|🍪','Orange|🍊'].map(x=>['Food & Drinks',...x.split('|'),'Something we eat or drink']),
+...['Dog|🐶','Cat|🐱','Fish|🐟','Bird|🐦','Cow|🐮','Duck|🦆','Horse|🐴','Sheep|🐑','Pig|🐷','Lion|🦁','Elephant|🐘','Butterfly|🦋'].map(x=>['Animals',...x.split('|'),'An animal']),
+...['Car|🚗','Bus|🚌','School Bus|🚌','Truck|🚚','Fire Truck|🚒','Ambulance|🚑','Police Car|🚓','Airplane|✈️','Train|🚆','Bicycle|🚲','Boat|⛵'].map(x=>['Vehicles',...x.split('|'),'A vehicle']),
+...['Door|🚪','Bed|🛏️','Chair|🪑','Table|🪑','Cup|🥤','Spoon|🥄','Plate|🍽️','Book|📚','Phone|📱','Light|💡','Toilet|🚽','Toothbrush|🪥'].map(x=>['At Home',...x.split('|'),'Something at home']),
+...['Hand|✋','Foot|🦶','Eye|👁️','Ear|👂','Nose|👃','Mouth|👄','Shirt|👕','Shoes|👟','Socks|🧦','Hat|🧢','Pants|👖'].map(x=>[( ['Hand','Foot','Eye','Ear','Nose','Mouth'].includes(x.split('|')[0]) ? 'Body Parts' : 'Clothes'),...x.split('|'),'Body part or clothing']),
+...['Ball|⚽','Teddy Bear|🧸','Blocks|🧱','Doll|🪆','Crayons|🖍️','Puzzle|🧩','Toy Car|🚙'].map(x=>['Toys',...x.split('|'),'A toy']),
+...['Tree|🌳','Flower|🌼','Sun|☀️','Moon|🌙','Rain|🌧️','Snow|❄️','Park|🌲','Playground|🛝','Grocery Store|🛒','School|🏫','House|🏠'].map(x=>['Outside & Places',...x.split('|'),'Something we see outside']),
+...['Hello|👋','Bye-bye|🙋','Please|🙇','Thank You|💛','Yes|👍','No|🙅','More|➕','Help|🙋','Eat|😋','Drink|🥤','Sleep|😴','Wash|🧼','Stop|🛑','Go|🟢'].map(x=>['Everyday Words',...x.split('|'),'A useful everyday word']),
+...['God|✨','Jesus|🕊️','God the Father|🌟','Holy Spirit|🕯️','Mary|👩‍🍼','Joseph|🧔','Church|⛪','Bible|📖','Prayer|🙏','Cross|✝️','Amen|🙌','Angel|😇','Christmas|🎄','Easter|🌅','Love|❤️','Kindness|💗','Pastor|🧑‍🏫','Priest / Father|⛪','Sunday School|🎒','Hymn|🎶','Noah|🛶','David|👑','Moses|🪨','Disciple|🚶','Nativity|⭐'].map(x=>['Spiritual Learning',...x.split('|'),'A word Christians may hear at church or at home'])
+];
+
+// Publisher defaults: use a clear picture of a table rather than a plate.
+const pictureOverrides = {'At Home|Table':'images/table.svg'};
