@@ -1,1 +1,0 @@
-Images live in subfolders named for their learning page. Use lowercase filenames without spaces, such as images/clothes/glasses.jpg. Add a matching path in image-assets.js. Do not put personal family photos in a public GitHub repository without permission.
