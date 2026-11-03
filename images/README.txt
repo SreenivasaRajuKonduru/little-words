@@ -1,1 +1,0 @@
-Upload only images you have permission to publish publicly. Reference as images/filename.jpg in family.js.
